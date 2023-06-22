@@ -76,7 +76,7 @@ void mod_s(stack_t **h, unsigned int size);
 int execute(char *ch, stack_t **stack, unsigned int size, FILE *file);
 void pchar_s(stack_t **h, unsigned int size);
 void pstr_s(stack_t **h, unsigned int size);
-void rotl_s(stack_t **h, unsigned int size);
+void rotl_s(stack_t **h, __attribute__((unused)) unsigned int size);
 void rotr_s(stack_t **h, __attribute__((unused)) unsigned int size);
 void stack_top(stack_t **h, unsigned int size);
 void stack_free(stack_t *h);
