@@ -13,8 +13,6 @@
 #include <fcntl.h>
 #include <ctype.h>
 
-#define STACK_SIZE 100
-
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -83,5 +81,7 @@ void stack_free(stack_t *h);
 void queue_top(stack_t **h, unsigned int size);
 void nqueue_top(stack_t **h, int num);
 char *clear(char *size);
+char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+ssize_t getstdin(char **lineptr, int file);
 
 #endif
