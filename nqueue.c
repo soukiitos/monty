@@ -20,6 +20,13 @@ void nqueue_top(stack_t **h, int num)
 	node->next = NULL;
 	if (a)
 	{
+		while (a->next)
+		{
+			a = a->next;
+		}
+	}
+	if (a)
+	{
 		a->next = node;
 		node->prev = a;
 	}
@@ -27,10 +34,5 @@ void nqueue_top(stack_t **h, int num)
 	{
 		*h = node;
 		node->prev = NULL;
-	}
-	if (a)
-	{
-		while (a->next)
-			a = a->next;
 	}
 }
