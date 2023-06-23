@@ -24,9 +24,9 @@ void push_pa(stack_t **h, unsigned int size)
 		{
 			j++;
 		}
-		for (j = 0; val.args[j] != '\0'; j++)
+		for (; val.args[j] != '\0'; j++)
 		{
-			if (val.args[j] < 48 || val.args[j] > 57)
+			if (val.args[j] > 57 || val.args[j] < 48)
 			{
 				c = 1;
 			}
