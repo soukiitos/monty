@@ -11,7 +11,7 @@ void nadd_s(stack_t **h, int num)
 	stack_t *a, *node;
 
 	a = *h;
-	node = (stack_t *) malloc(sizeof(stack_t));
+	node = malloc(sizeof(stack_t));
 	if (node == NULL)
 	{
 		printf("Error\n");
@@ -21,7 +21,7 @@ void nadd_s(stack_t **h, int num)
 	{
 		a->prev = node;
 	}
-	node->n = n;
+	node->n = num;
 	node->next = *h;
 	node->prev = NULL;
 	*h = node;
