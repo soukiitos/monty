@@ -21,7 +21,7 @@ void nadd_s(stack_t **h, int num)
 	{
 		a->prev = node;
 	}
-	node->n = num;
+	node->n = n;
 	node->next = *h;
 	node->prev = NULL;
 	*h = node;
