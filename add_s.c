@@ -19,7 +19,7 @@ void add_s(stack_t **h, unsigned int size)
 	}
 	if (count < 2)
 	{
-		fprintf(stderr, "L%d, can't add, stack too short\n", size);
+		fprintf(stderr, "L%d: can't add, stack too short\n", size);
 		fclose(val.file);
 		free(val.ch);
 		stack_free(*h);
